@@ -126,7 +126,23 @@ namespace Menu_Calculos
 
         private void btnParImpar_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                double a = double.Parse(txtN1.Text); // var numérica
+                double b = double.Parse(txtN2.Text);
+
+                string typeA = (a % 2 == 0) ? "par" : "ímpar";
+                string typeB = (b % 2 == 0) ? "par" : "ímpar";
+                
+                lblSinal.Text = ""; // muda o texto
+                lblResul2.Text = $"{a}: {typeA}; {b}: {typeB}.";
+                lblResultado.Text = "";
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Só é permitido números neste campo!");
+                button2_Click(sender, e);
+            }
         }
 
         private void frmCalculosBot_Load(object sender, EventArgs e)
@@ -139,6 +155,31 @@ namespace Menu_Calculos
 
         private void btnComparar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double a = double.Parse(txtN1.Text); // var numérica
+                double b = double.Parse(txtN2.Text);
+
+                if (a > b)
+                {
+                    lblResul2.Text = $"{a} > {b}";
+                } else if (a < b)
+                {
+                    lblResul2.Text = $"{a} < {b}";
+                }
+                else
+                {
+                    lblResul2.Text = $"{a} == {b}";
+                }
+                
+                lblSinal.Text = ""; // muda o texto
+                lblResultado.Text = "";
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Só é permitido números neste campo!");
+                button2_Click(sender, e);
+            }
         }
     }
 }

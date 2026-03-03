@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculosBot));
             this.txtN2 = new System.Windows.Forms.TextBox();
             this.lblSinal = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblResul2 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnSomar = new System.Windows.Forms.Button();
             this.btnLimparTexto = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             // 
             this.txtN2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtN2.Location = new System.Drawing.Point(351, 127);
+            this.txtN2.Location = new System.Drawing.Point(351, 138);
             this.txtN2.Name = "txtN2";
             this.txtN2.Size = new System.Drawing.Size(100, 22);
             this.txtN2.TabIndex = 1;
@@ -68,16 +68,17 @@
             this.lblSinal.Text = "?";
             this.lblSinal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblResul2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(314, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "____________________";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblResul2.AutoSize = true;
+            this.lblResul2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResul2.Location = new System.Drawing.Point(314, 176);
+            this.lblResul2.Name = "lblResul2";
+            this.lblResul2.Size = new System.Drawing.Size(168, 16);
+            this.lblResul2.TabIndex = 3;
+            this.lblResul2.Text = "____________________";
+            this.lblResul2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResul2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblResultado
             // 
@@ -203,12 +204,12 @@
             this.calculatorPanel.Controls.Add(this.txtN2);
             this.calculatorPanel.Controls.Add(this.btn_subtrair);
             this.calculatorPanel.Controls.Add(this.btnComparar);
-            this.calculatorPanel.Controls.Add(this.label2);
+            this.calculatorPanel.Controls.Add(this.lblResul2);
             this.calculatorPanel.Controls.Add(this.lblResultado);
             this.calculatorPanel.Controls.Add(this.btnSomar);
             this.calculatorPanel.Location = new System.Drawing.Point(-1, 0);
             this.calculatorPanel.Name = "calculatorPanel";
-            this.calculatorPanel.Size = new System.Drawing.Size(776, 425);
+            this.calculatorPanel.Size = new System.Drawing.Size(776, 446);
             this.calculatorPanel.TabIndex = 13;
             this.calculatorPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -217,7 +218,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(756, 401);
+            this.ClientSize = new System.Drawing.Size(720, 413);
             this.Controls.Add(this.calculatorPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(15, 15);
@@ -246,7 +247,7 @@
 
         private System.Windows.Forms.TextBox txtN2;
         private System.Windows.Forms.Label lblSinal;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblResul2;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnSomar;
         private System.Windows.Forms.Button btnLimparTexto;
