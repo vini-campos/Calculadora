@@ -7,3 +7,5 @@ Calculadore desenvolvida em sala de aula e conceitos sobre git.
 - Divisão
 - Cormparar números
 - Par/Ímpar
+
+<img src="/assets/calculadora_png.webp" width="200px"/>
