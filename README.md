@@ -1,1 +1,9 @@
-# Solução_Menu_Calculos
+# Calculadora - Windows Forms
+Calculadore desenvolvida em sala de aula e conceitos sobre git.  
+## A calculadora em desenvolvimento deverá conter:  
+- Soma
+- Subtração
+- Multiplicação
+- Divisão
+- Cormparar números
+- Par/Ímpar
